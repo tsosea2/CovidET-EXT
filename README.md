@@ -1,2 +1,3 @@
 # CovidET-EXT
  
+For legal concerns, we only release the annotations and the corresponding IDs in Reddit (and *not* original posts). If you want to retrieve the original Reddit posts, please email me at [honglizhan@utexas.edu](mailto:honglizhan@utexas.edu), and I will share the dataset containing the original Reddit posts with you. The original dataset is available on Google Drive [here](https://drive.google.com/drive/folders/1APfcOe2MAl8bP56D6Ug5LqamkVuHhJrC?usp=share_link).
