@@ -6,7 +6,7 @@ Authors: <a href="https://www.tsosea.com/">Tiberiu Sosea</a>, <a href="https://h
 
 For legal concerns, we only release the annotations and the corresponding IDs in Reddit (and *not* original posts). If you want to retrieve the original Reddit posts, please email me at [honglizhan@utexas.edu](mailto:honglizhan@utexas.edu), and I will share the dataset containing the original Reddit posts with you. The original dataset is available on Google Drive [here](https://drive.google.com/drive/folders/1APfcOe2MAl8bP56D6Ug5LqamkVuHhJrC?usp=share_link).
 
-This work is inspired by the EMNLP 2022 paper: <a href="https://aclanthology.org/2022.emnlp-main.642.pdf">Why Do You Feel This Way? Summarizing Triggers of Emotions in Social Media Posts</a>. Please cite it as well:
+This work is inspired by the EMNLP 2022 paper <a href="https://aclanthology.org/2022.emnlp-main.642.pdf">Why Do You Feel This Way? Summarizing Triggers of Emotions in Social Media Posts</a>. Please cite it as well:
 
 ```bibtex
 @inproceedings{zhan-etal-2022-feel,
