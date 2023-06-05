@@ -2,8 +2,6 @@
 
 This repo contains the dataset and code for our ACL 2023 paper. If you use this dataset, please cite our paper.
 
-Code will be available soon.
-
 Title: Unsupervised Extractive Summarization of Emotion Triggers
 
 Authors: <a href="https://www.tsosea.com/">Tiberiu Sosea</a>, <a href="https://honglizhan.github.io/">Hongli Zhan</a>, <a href="https://jessyli.com/">Junyi Jessy Li</a>, <a href="https://www.cs.uic.edu/~cornelia/">Cornelia Caragea</a>
@@ -19,8 +17,16 @@ Authors: <a href="https://www.tsosea.com/">Tiberiu Sosea</a>, <a href="https://h
 }
 ```
 
+# Abstract
+Understanding what leads to emotions during large-scale crises is important as it can provide groundings for expressed emotions and subsequently improve the understanding of ongoing disasters. Recent approaches trained supervised models to both detect emotions and explain emotion triggers (events and appraisals) via abstractive summarization. However, obtaining timely and qualitative abstractive summaries is expensive and extremely time-consuming, requiring highly-trained expert annotators. In time-sensitive, high-stake contexts, this can block necessary responses. We instead pursue unsupervised systems that extract triggers from text. First, we introduce CovidET-EXT, augmenting (Zhan et al., 2022)’s abstractive dataset (in the context of the COVID-19 crisis) with extractive triggers. Second, we develop new unsupervised learning models that can jointly detect emotions and summarize their triggers. Our best approach, entitled Emotion-Aware Pagerank, incorporates emotion information from external sources combined with a language understanding module, and outperforms strong baselines. We release our data and code at https://github.com/tsosea2/CovidET-EXT.
+
+# Data
 For legal concerns, we only release the annotations and the corresponding IDs in Reddit (and *not* original posts). If you want to retrieve the original Reddit posts, please email me at [honglizhan@utexas.edu](mailto:honglizhan@utexas.edu), and I will share the dataset containing the original Reddit posts with you. The original dataset is available on Google Drive [here](https://drive.google.com/drive/folders/1APfcOe2MAl8bP56D6Ug5LqamkVuHhJrC?usp=share_link).
 
+# Code
+Code will be available soon.
+
+# Related Work
 This work is inspired by the EMNLP 2022 paper <a href="https://aclanthology.org/2022.emnlp-main.642.pdf">Why Do You Feel This Way? Summarizing Triggers of Emotions in Social Media Posts</a>. Please cite it as well:
 
 ```bibtex
