@@ -1,6 +1,17 @@
 # CovidET-EXT (ACL 2023)
 
-This repo contains the dataset and code for our ACL 2023 paper. If you use this dataset, please cite our paper.
+This repo contains the dataset and code for our ACL 2023 paper. If you use this dataset, please cite our paper:
+
+```bibtex
+@misc{sosea2023unsupervised,
+      title={Unsupervised Extractive Summarization of Emotion Triggers}, 
+      author={Tiberiu Sosea and Hongli Zhan and Junyi Jessy Li and Cornelia Caragea},
+      year={2023},
+      eprint={2306.01444},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
 
 Code will be available soon.
 
