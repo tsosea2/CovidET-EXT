@@ -2,7 +2,7 @@
 
 This repo contains the dataset and code for our ACL 2023 paper. If you use this dataset, please cite our paper.
 
-Title: Unsupervised Extractive Summarization of Emotion Triggers
+Title: <a href="https://aclanthology.org/2023.acl-long.531/">Unsupervised Extractive Summarization of Emotion Triggers</a>
 
 Authors: <a href="https://www.tsosea.com/">Tiberiu Sosea</a>, <a href="https://honglizhan.github.io/">Hongli Zhan</a>, <a href="https://jessyli.com/">Junyi Jessy Li</a>, <a href="https://www.cs.uic.edu/~cornelia/">Cornelia Caragea</a>
 
