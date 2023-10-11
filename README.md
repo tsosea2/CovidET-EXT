@@ -51,7 +51,11 @@ Understanding what leads to emotions during large-scale crises is important as i
 We release the original Reddit posts together with the annotations in CovidET-EXT. The dataset is under the "data" folder.
 
 # Code
-Code will be available soon.
+To create summaries using Emotion-Aware Pagerank, run:
+
+```
+python eap.py  --emotion <emotion> --training_data_path <path_to_posts_train_csv> --test_data_json <path_to_test_proc_anon_json> --validation_data_json <path_to_validation_proc_anon_json> --force_embeddings_computation --embedding_directory <directory_path>
+```
 
 [![RevolverMaps Live Traffic Map](http://rf.revolvermaps.com/w/3/s/a/7/0/0/ffffff/010020/aa0000/5mtpsf8i5p6.png)](https://www.revolvermaps.com/livestats/5mtpsf8i5p6/)
 
