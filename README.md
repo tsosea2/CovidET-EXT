@@ -65,7 +65,7 @@ python eap.py  --emotion <emotion> --training_data_path <path_to_posts_train_csv
 Parameters that can be used to customize the Emotion-Aware PageRank algorithm:
 
 - `vocab_size`
-- `window_size` -> used to configure what words are considered adjacent in text. For example, if the window is sized 2, a word at index i is neighbouring the words at indexes, i-2, i-1, i+1, i+2.
+- `window_size` -> used to configure what words are considered adjacent in text. For example, if the window is sized 2, a word at index i is neighbouring the words at indexes i-2, i-1, i+1, i+2.
 - `edge_minimum_weight` -> how many times two adjacent words have to appear together in order to assign a weight to the edge between them.
 - `lamda` -> the bias in the biased pagerank, lower values means a higher influence of the prior provided by the intensity lexicon.
 - `per_word_probability` -> the default bias for a regular word (not present in the emotion intensity lexicon).
