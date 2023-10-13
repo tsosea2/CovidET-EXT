@@ -66,13 +66,13 @@ Additional hyperparametrs that can be used to customize the Emotion-Aware PageRa
 
 - `vocab_size`
 - `window_size` -> used to configure what words are considered adjacent in text. For example, if the window is sized 2, a word at index i is neighbouring the words at indexes, i-2, i-1, i+1, i+2.
-`edge_minimum_weight` -> how many times two adjacent words have to appear together in order to assign a weight to the edge between them.
-`lamda` -> the bias in the biased pagerank, lower values means a higher influence of the prior provided by the intensity lexicon.
-`per_word_probability` -> the default bias for a regular word (not present in the emotion intensity lexicon).
-`relevance_weight` -> what weight to assign to the `relevance` score. A value higher than 0.5 means a larger weight assigned to the `relevance` score while a lower weight means a higher weight assigned to the `meaning` score.
-`pos_tags` -> what POS tags to keep.
-`emotion` -> what emotion to run Emotion-Aware Pagerank on.
-`results_file` -> csv file path where the results will be saved.
+- `edge_minimum_weight` -> how many times two adjacent words have to appear together in order to assign a weight to the edge between them.
+- `lamda` -> the bias in the biased pagerank, lower values means a higher influence of the prior provided by the intensity lexicon.
+- `per_word_probability` -> the default bias for a regular word (not present in the emotion intensity lexicon).
+- `relevance_weight` -> what weight to assign to the `relevance` score. A value higher than 0.5 means a larger weight assigned to the `relevance` score while a lower weight means a higher weight assigned to the `meaning` score.
+- `pos_tags` -> what POS tags to keep.
+- `emotion` -> what emotion to run Emotion-Aware Pagerank on.
+- `results_file` -> csv file path where the results will be saved.
 
 [![RevolverMaps Live Traffic Map](http://rf.revolvermaps.com/w/3/s/a/7/0/0/ffffff/010020/aa0000/5mtpsf8i5p6.png)](https://www.revolvermaps.com/livestats/5mtpsf8i5p6/)
 
