@@ -51,11 +51,20 @@ Understanding what leads to emotions during large-scale crises is important as i
 We release the original Reddit posts together with the annotations in CovidET-EXT. The dataset is under the "data" folder.
 
 # Code
+
+First, download the Emotion Intensity Lexicon (Mohammad, 2018) and save it in the root of this repository. Link to the lexicon: <a href="http://saifmohammad.com/WebPages/lexicons.html">Sentiment and Emotion Lexicons</a>. The name of the emotion-intensity lexicon file is `NRC-Emotion-Intensity-Lexicon-v1.txt`.
+
 To create summaries using Emotion-Aware Pagerank, run:
 
 ```
 python eap.py  --emotion <emotion> --training_data_path <path_to_posts_train_csv> --test_data_json <path_to_test_proc_anon_json> --validation_data_json <path_to_validation_proc_anon_json> --force_embeddings_computation --embedding_directory <directory_path>
 ```
+
+`<path_to_posts_train_csv>`, `<path_to_test_proc_anon_json>`, and `<path_to_validation_proc_anon_json>` can be found in the `Data` directory.
+
+Additional hyperparametrs for customizing the Emotion-Aware PageRank algorithm:
+
+
 
 [![RevolverMaps Live Traffic Map](http://rf.revolvermaps.com/w/3/s/a/7/0/0/ffffff/010020/aa0000/5mtpsf8i5p6.png)](https://www.revolvermaps.com/livestats/5mtpsf8i5p6/)
 
