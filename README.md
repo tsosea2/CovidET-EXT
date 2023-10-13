@@ -62,7 +62,7 @@ python eap.py  --emotion <emotion> --training_data_path <path_to_posts_train_csv
 
 `<path_to_posts_train_csv>`, `<path_to_test_proc_anon_json>`, and `<path_to_validation_proc_anon_json>` can be found in the `Data` directory.
 
-Additional hyperparametrs that can be used to customize the Emotion-Aware PageRank algorithm:
+Parameters that can be used to customize the Emotion-Aware PageRank algorithm:
 
 - `vocab_size`
 - `window_size` -> used to configure what words are considered adjacent in text. For example, if the window is sized 2, a word at index i is neighbouring the words at indexes, i-2, i-1, i+1, i+2.
