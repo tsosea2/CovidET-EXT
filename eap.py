@@ -400,19 +400,29 @@ def main(argv):
   crt_threshold = -1
   crt_performance = -1
   for threshold in thresholds_to_test:
-    print('TESTING THRESHOLD: ', threshold)
     summaries, list_of_summary_sentence_idx, lengths = compute_post_summaries(list_of_validation_posts, final_sentence_scores_validation, threshold)
     avg_r1, avg_r2, avg_rl = evaluate_summaries(summaries, list_of_summary_sentence_idx, lengths, validation_data)
     if avg_r2 > crt_performance:
       crt_performance = avg_r2
       crt_threshold = threshold
-    df = pd.read_csv('validation_results.csv')
+
+    if os.path.exists('validation_results.csv'):
+      df = pd.read_csv('validation_results.csv')
+    else:
+      df = pd.DataFrame(columns=["R1","R2","RL","Vocab Size","Window Size","Edge Minimum Weight","Lamda","Per Word Probability","Relevance Weight","Score Threshold","Emotion"
+])
     df.loc[len(df)] = [avg_r1, avg_r2, avg_rl, FLAGS.vocab_size, FLAGS.window_size, FLAGS.edge_minimum_weight, FLAGS.lamda, FLAGS.per_word_probability, FLAGS.relevance_weight, threshold, FLAGS.emotion]
     df.to_csv('validation_results.csv', index=False)
   
   summaries, list_of_summary_sentence_idx, lengths = compute_post_summaries(list_of_test_posts, final_sentence_scores_test, crt_threshold)
   avg_r1, avg_r2, avg_rl = evaluate_summaries(summaries, list_of_summary_sentence_idx, lengths, test_data)
-  df = pd.read_csv('test_results.csv')
+
+  if os.path.exists('test_results.csv'):
+    df = pd.read_csv('test_results.csv')
+  else:
+    df = pd.DataFrame(columns=["R1","R2","RL","Vocab Size","Window Size","Edge Minimum Weight","Lamda","Per Word Probability","Relevance Weight","Score Threshold","Emotion"
+])
+
   df.loc[len(df)] = [avg_r1, avg_r2, avg_rl, FLAGS.vocab_size, FLAGS.window_size, FLAGS.edge_minimum_weight, FLAGS.lamda, FLAGS.per_word_probability, FLAGS.relevance_weight, crt_threshold, FLAGS.emotion]
   df.to_csv("test_results.csv", index=False)
 
