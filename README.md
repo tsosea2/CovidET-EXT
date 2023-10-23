@@ -60,7 +60,7 @@ To create summaries using Emotion-Aware Pagerank, run:
 python eap.py  --emotion <emotion> --training_data_path <path_to_posts_train_csv> --test_data_json <path_to_test_proc_anon_json> --validation_data_json <path_to_validation_proc_anon_json> --force_embeddings_computation --embedding_directory <directory_path>
 ```
 
-`<path_to_posts_train_csv>`, `<path_to_test_proc_anon_json>`, and `<path_to_validation_proc_anon_json>` can be found in the `Data` directory.
+`<path_to_posts_train_csv>`, `<path_to_test_proc_anon_json>`, and `<path_to_validation_proc_anon_json>` can be found in the `Data` directory. Additionally, `embedding_directory` specifies a directory where the sentence embeddings will be saved. Use the same directory for subsequent runs for an emotion without setting `force_embeddings_computation` to load the cached embeddings. If `force_embeddings_computation` is set the embeddings will always be computed.
 
 Parameters that can be used to customize the Emotion-Aware PageRank algorithm:
 
